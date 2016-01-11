@@ -50,6 +50,7 @@ func representAsInteger(number : [Int]) -> (binaryIntegerLiteral: String, intege
     
 }
 
+
 // Declare a number as an array of 8 bits (a byte) – a binary representation of an integer
 var sixteen = [0, 0, 0, 1, 0, 0, 0, 0]
 
@@ -59,6 +60,7 @@ var sixteenAsInteger = representAsInteger(sixteen)
 // Show the return values
 sixteenAsInteger.binaryIntegerLiteral
 sixteenAsInteger.integer
+
 
 // Declare a number as an array of 8 bits (a byte) – a binary representation of an integer
 var fourteen = [0, 0, 0, 0, 1, 1, 1, 0]
@@ -70,5 +72,19 @@ var fourteenAsInteger = representAsInteger(fourteen)
 fourteenAsInteger.binaryIntegerLiteral
 fourteenAsInteger.integer
 
+
+// Declare a number as an array of 8 bits (a byte) – a binary representation of an integer
+var twoHundredAndFourtyEight = [1, 1, 1, 1, 1, 0, 0, 0]
+
+// Represent the binary number as an integer
+var twoHundredAndFourtyEightAsInteger = representAsInteger(twoHundredAndFourtyEight)
+
+// Show the return values
+twoHundredAndFourtyEightAsInteger.binaryIntegerLiteral
+twoHundredAndFourtyEightAsInteger.integer
+
+
 // Create an array of these values
-var numbersToSort = [sixteen, fourteen]
+var numbersToSort = [sixteen, fourteen, twoHundredAndFourtyEight]
+
+// Sort these values... that's up to you!
