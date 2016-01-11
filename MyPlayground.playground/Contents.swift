@@ -7,6 +7,7 @@ import Foundation
 //
 // PURPOSE: Take the array as input (eight elements assumed).
 //          The input array represents a number encoded in base 2 (binary).
+//          Each element in the array represents a bit in the binary number.
 //          Return the input array as a binary integer literal and also actually as an integer.
 func representAsInteger(number : [Int]) -> (binaryIntegerLiteral: String, integer: Int) {
     
@@ -16,7 +17,7 @@ func representAsInteger(number : [Int]) -> (binaryIntegerLiteral: String, intege
     // Declare the integer value
     var integerValue = 0
     
-    // Iterate over each "bit" or element in the array in the
+    // Iterate over each "bit" or element in the array
     for (index, bit) in number.enumerate() {
         
         // What element of the array is this?
